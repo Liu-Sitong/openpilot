@@ -39,8 +39,8 @@
 
 #ifdef QCOM
 const uint32_t NO_IGNITION_CNT_MAX = 2 * 60 * 60 * 2.0;  // turn off charge after 2 hrs
-const float VBATT_START_CHARGING = 11.7;
-const float VBATT_PAUSE_CHARGING = 11.2;
+const float VBATT_START_CHARGING = 12.0;
+const float VBATT_PAUSE_CHARGING = 11.6;
 #endif
 
 namespace {
