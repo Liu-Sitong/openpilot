@@ -186,8 +186,8 @@ class CarInterface(CarInterfaceBase):
       ret.centerToFront = CivicParams.CENTER_TO_FRONT
       ret.steerRatio = 15.38  # 10.93 is end-to-end spec
       if eps_modified:
-        ret.lateralParams.torqueBP, ret.lateralParams.torqueV = [[0, 2564, 8000], [0, 2564, 3840]] 
-        ret.lateralTuning.pid.kpV, ret.lateralTuning.pid.kiV = [[0.32], [0.1]] #2.5 default mod #TMG put your values here
+        ret.lateralParams.torqueBP, ret.lateralParams.torqueV = [[0, 1992, 15000], [0, 1992, 3840]] 
+        ret.lateralTuning.pid.kpV, ret.lateralTuning.pid.kiV = [[0.195], [0.065]] #my mod
       else:
         ret.lateralParams.torqueBP, ret.lateralParams.torqueV = [[0, 4096], [0, 4096]]
         ret.lateralTuning.pid.kpV, ret.lateralTuning.pid.kiV = [[0.8], [0.24]]
